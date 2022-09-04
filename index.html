@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="MUH. AHSAN" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <title>Bookshelf Apps</title>
+  </head>
+  <body>
+		<header class="header">
+			<div class="main-menu">
+				<img class="menu-icon" src="./assets/icons/menu_icon.svg" alt="Menu">
+			</div>
+			<div class="logo">
+				<img class="logo-icon" src="./assets/images/bookshelf-apps_logo.png" alt="Bookshelf Apps">
+				<span class="logo-name">Bookshelf Apps</span>
+			</div>
+			<div class="search">
+				<label for="searchBook" class="search-icon">
+					<img src="./assets/icons/search_icon.svg" alt="Search">
+				</label>
+				<input type="text" id="searchBook" name="searchBook" class="search-item" placeholder="Telusuri">
+			</div>
+			<nav class="nav">
+				<div class="left-nav">
+					<span class="setting">
+						<img class="setting-icon" src="./assets/icons/refresh_icon.svg" alt="Refresh">
+					</span>
+					<span class="setting">
+						<img class="setting-icon" src="./assets/icons/view_agenda_icon.svg" alt="View">
+					</span>
+					<span class="setting">
+						<img class="setting-icon" src="./assets/icons/settings_icon.svg" alt="Setting">
+					</span>
+				</div>	
+				<div class="right-nav">
+					<a class="apps">
+						<img src="./assets/icons/apps_icon.svg" alt="Apps">
+					</a>
+				</div>
+			</nav>
+		</header>
+		<main class="main">
+			<section class="input-section">
+				<form class="form" id="inputBook">
+					<input type="text" id="inputBookTitle" class="input" placeholder="Judul" required>
+					<input type="text" id="inputBookAuthor" class="input" placeholder="Penulis" required>
+					<input type="number" id="inputBookYear" class="input" placeholder="Tahun" required>
+					<div class="checkbox">
+						<label for="inputBookIsCompleted">Selesai dibaca</label>
+						<input type="checkbox" id="inputBookIsCompleted" class="input-checkbox">
+					</div>
+					<button type="submit" id="bookSubmit" class="button-submit">Masukan Buku</button>
+				</form>
+			</section>
+
+			<section class="result-section">
+				<div class="book-shelf">
+					<p class="bookshelf-pin">Belum selesai dibaca</p>
+					<div id="incompleteBookshelfList" class="book-list">
+						<!-- <article class="book-item">
+							<h3>Advance JavaScript</h3>
+							<p>Penulis: MUH. AHSAN</p>
+							<p>Tahun: 2022</p>
+
+							<div class="action">
+								<p class="not-read">Belum selesai dibaca</p>
+								<div class="action-button">
+									<button class="checked"></button>
+								</div>
+							</div>
+						</article>	 -->
+					</div>
+				</div>
+				<div class="book-shelf">
+					<p class="bookshelf-pin">Sudah selesai dibaca</p>
+					<div id="completedBookshelfList" class="book-list">
+						<!-- <article class="book-item">
+							<h3>Advance Node.js</h3>
+							<p>Penulis: MUH. AHSAN</p>
+							<p>Tahun: 2022</p>
+
+							<div class="action">
+								<p class="read">Selesai dibaca</p>
+								<div class="action-button">
+									<button class="undo"></button>
+									<button class="delete"></button>
+								</div>
+							</div>
+						</article> -->
+					</div>
+				</div>
+			</section>
+		</main>	
+		<aside class="aside">
+			<div class="list-menus">
+				<a class="menu">
+					<img src="./assets/icons/notes_icon.svg" alt="Notes">
+					<span class="initial-menu">Catatan</span>
+				</a>
+				<a class="menu">
+					<img src="./assets/icons/notifications_icon.svg" alt="Notification">
+					<span class="initial-menu">Notifikasi</span>
+				</a>
+				<a class="menu">
+					<img src="./assets/icons/edit_icon.svg" alt="Edit">
+					<span class="initial-menu">Edit</span>
+				</a>
+				<a class="menu">
+					<img src="./assets/icons/archive_icon.svg" alt="Archive">
+					<span class="initial-menu">Archive</span>
+				</a>
+				<a class="menu">
+					<img src="./assets/icons/trash_icon.svg" alt="Trash">
+					<span class="initial-menu">Trash</span>
+				</a>	
+			</div>
+		</aside>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
